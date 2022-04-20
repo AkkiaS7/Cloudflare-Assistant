@@ -1,8 +1,20 @@
 package main
 
-import "Cloudflare-Assistant/server"
+import (
+	"Cloudflare-Assistant/router"
+	"Cloudflare-Assistant/service"
+)
+
+var (
+	server *router.Server
+)
+
+func init() {
+	service.InitService()
+	server = router.InitRouter()
+}
 
 func main() {
-	go server.Start()
+	server.Run()
 	select {}
 }

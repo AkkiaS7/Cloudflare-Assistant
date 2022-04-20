@@ -1,0 +1,7 @@
+Oauth2:
+   Github:
+      Enable: false
+      ClientId: 'your_client_id'
+      ClientSecret: 'your_client_secret'
+      RedirectUri: 'http://localhost:3000/auth/github/callback'
+      Scope: 'user:email'
