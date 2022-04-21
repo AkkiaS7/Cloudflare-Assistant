@@ -1,4 +1,4 @@
-package model
+package service
 
 import (
 	"github.com/spf13/viper"
@@ -9,13 +9,15 @@ import (
 
 // Config 站点配置
 type Config struct {
-	Debug  bool
-	Oauth2 struct {
+	Debug               bool
+	EnablePasswordLogin bool
+	Oauth2              struct {
 		Github struct {
 			Enable       bool
 			ClientID     string
 			ClientSecret string
 			RedirectURL  string
+			Scopes       []string
 		}
 	}
 

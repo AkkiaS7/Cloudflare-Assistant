@@ -7,7 +7,7 @@ import (
 )
 
 var (
-	Conf = &model.Config{}
+	Conf = &Config{}
 	DB   = &gorm.DB{}
 )
 

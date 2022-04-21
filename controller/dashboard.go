@@ -25,7 +25,5 @@ func (dc *DashboardController) index(c *gin.Context) {
 
 // login 登入页面
 func (dc *DashboardController) login(c *gin.Context) {
-	c.HTML(200, "dashboard/login.html", gin.H{
-		"title": "Login",
-	})
+
 }
