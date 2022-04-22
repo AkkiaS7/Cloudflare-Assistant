@@ -1,0 +1,4 @@
+Token: 123456
+ZoneAccessWhitelist:
+  - "example.com": "note1"
+ZoneIDList:

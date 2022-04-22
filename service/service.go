@@ -39,5 +39,4 @@ func InitDBFromPath(path string) {
 	err = DB.AutoMigrate(
 		&model.User{},
 	)
-
 }
